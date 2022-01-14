@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Proiect</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="icon" href="img/icon.ico">
+    </head>
+    <body>
+        <header>
+        <div class="logo">Pc world</div>
+        <form action="produse.html" method="post" class="search">
+        <datalist id="produse">
+            <option value="Lenovo">
+            <option value="Hp">
+            <option value="Acer">
+            <option value="Asus">
+            <option value="Apple">
+            <option value="Dell">
+        </datalist>
+        <input type="text" list="produse" name="produse" class="search-inp">
+        <button type="button" name="button"><i class="fa fa-search"></i></button>
+        </form>
+        <form action="index.html" method="post">
+            <div class="autentificare">
+                <button type="button" name="button" class="button btn-grad">Autentificare</button>
+                <button type="button" name="button" class="button btn-grad">Inregistrare</button>
+            </div>
+        </form>
+        </header>
+        <nav>
+            <ol class="meniu">
+                <li class="item"><a href="index.html"><i class="fas fa-home">Home</i></a></li>
+                <li class="item sub"><a href="produse.html"><i class="fas fa-store-alt">Produse</i></a>
+                    <ol class="sub-meniu">
+                        <li><a href="produse.html#s1">Lenovo</a></li>
+                        <li><a href="produse.html#s2">Hp</a></li>
+                        <li><a href="produse.html#s3">Acer</a></li>
+                        <li><a href="produse.html#s4">Asus</a></li>
+                        <li><a href="produse.html#s5">Apple</a></li>
+                        <li><a href="produse.html#s6">Dell</a></li>
+                    </ol>
+                <li class="item active"><a href="#"><i class="fas fa-shopping-cart">Comenzi</i></a></li>
+                <li class="item"><a href="contact.html"><i class="fas fa-address-book">Contact</i></a></li>
+            </ol>
+        </nav>
+        <main>
+            <table class="tbl-comenzi">
+                <caption>Comanda</caption>
+                <thead>
+                    <tr class="row">
+                        <th>#</th>
+                        <th>Produs</th>
+                        <th>Cantitate</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td></td>
+                        <td>Lenovo</td>
+                        <td>1</td>
+                        <td>800 &euro;</td>
+                    </tr>
+                    <tr class="row">
+                        <td></td>
+                        <td>Acer</td>
+                        <td>2</td>
+                        <td>900 &euro;</td>
+                    </tr>
+                    <tr class="row">
+                        <td></td>
+                        <td>Hp</td>
+                        <td>1</td>
+                        <td>500 &euro;</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="row">
+                        <td colspan="3">Total</td>
+                        <td class="total">3100 &euro;</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="button-comenzi btn-cmz">Plateste</button>
+        </main>
+        <footer>
+            <div>Diaconu Tiu</div>
+            <div>Catalin</div>
+            <div>Clasa 022</div>
+        </footer>
+    </body>
+</html>
